@@ -3,29 +3,29 @@
 #include "funciones.h"
 
 int menu(float a, float b){
-	int option; //Opcion del menu que el usuario elige
-	system("cls");
-	printf("Bienvenido a la calculadora\n");
+	int option; //Opción del menú que el usuario elige
+	system("cls||clear");
+	printf("Menú de opciones:\n");
 	printf("1) Ingresar 1er operando (A=%.2f)\n", a);
 	printf("2) Ingresar 2do operando (B=%.2f)\n", b);
-	printf("3) Calcular todas las operaciones\n");
+	printf("3) Calcular todas las operaciones.\n");
 	printf("	a) Calcular la suma (A+B)\n");
 	printf("	b) Calcular la resta (A-B)\n");
-	printf("	c) Calcular la divisi%cn (A/B)\n", 162);
-	printf("	d) Calcular la multiplicaci%cn (A*B)\n", 162);
+	printf("	c) Calcular la división (A/B)\n");
+	printf("	d) Calcular la multiplicación (A*B)\n");
 	printf("	e) Calcular el factorial (A!)\n");
-	printf("4) Informar resultados\n");
-	printf("5) Salir\n\n");
-	printf("Seleccione una opci%cn: ", 162);
+	printf("4) Informar resultados.\n");
+	printf("5) Salir.\n\n");
+	printf("Seleccione una opción: ");
 	fflush(stdin);
 	scanf("%d", &option);
 	return option;
 }
 
-float getFloat(char mensaje[]){
-	system("cls");
+float getFloat(char message[]){
 	float a;
-	printf("%s", mensaje);
+	system("cls||clear");
+	printf("%s", message);
 	fflush(stdin);
 	scanf("%f",&a);
 	return a;

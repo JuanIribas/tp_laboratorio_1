@@ -1,43 +1,43 @@
 #ifndef FUNCIONES_H_
 #define FUNCIONES_H_
 
-/** \brief Muestra al usuario el menu y devuelve la opción elegida
+/** \brief Limpia la pantalla, muestra al usuario el menu y devuelve la opción elegida
  *
- * \param a Es el primer numero
- * \param b Es el segundo numero
+ * \param a Es el primer número
+ * \param b Es el segundo número
  *
- * \return Devuelve la opcion elegida por el usuario
+ * \return Devuelve la opción elegida por el usuario
  */
 int menu(float a, float b);
 
-/** \brief Pide al usuario un numero flotante y lo devuelve
+/** \brief Limpia la pantalla, pide al usuario un número flotanta y lo devuelve
  *
  * \param message Es el mensaje a mostrar
- * \param a Es el numero flotante
+ * \param a Es el número flotante
  * \return Devuelve a
  *
  */
 float getFloat(char message[]);
 
-/** \brief Suma dos numeros flotantes
+/** \brief Suma dos números flotantes
  *
- * \param a Es el primer numero a sumar
- * \param b Es el segundo numero a sumar
+ * \param a Es el primer número a sumar
+ * \param b Es el segundo número a sumar
  * \return Devuelve la suma de los parametros ingresados
  *
  */
 float mathsAdd(float a, float b);
 
-/** \brief Resta dos numeros flotantes
+/** \brief Resta dos números flotantes
  *
- * \param a Es el primer numero a restar
- * \param b Es el segundo numero a restar
+ * \param a Es el primer número a restar
+ * \param b Es el segundo número a restar
  * \return Devuelve la resta de los parametros ingresados
  *
  */
 float mathsSubtract(float a, float b);
 
-/** \brief Divide dos numeros flotantes
+/** \brief Divide dos números flotantes
  *
  * \param a Es el dividendo
  * \param b Es el divisor
@@ -46,7 +46,7 @@ float mathsSubtract(float a, float b);
  */
 float mathsDivide(float a, float b);
 
-/** \brief Multiplica dos numeros flotantes
+/** \brief Multiplica dos números flotantes
  *
  * \param a Es el multiplicando
  * \param b Es el multiplicador
@@ -55,11 +55,11 @@ float mathsDivide(float a, float b);
  */
 float mathsMultiply(float a, float b);
 
-/** \brief Calcula el factorial de un numero
+/** \brief Calcula el factorial de un número
  *
- * \param a Es el numero ingresado
+ * \param a Es el número ingresado
  *
- * \return Devuelve el factorial del numero ingresado
+ * \return Devuelve el factorial del número ingresado
  *
  */
 long int mathsFactorize(int a);
