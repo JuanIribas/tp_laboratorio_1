@@ -47,8 +47,8 @@ float mathsMultiply(float a, float b){
 	return a * b;
 }
 
-long int mathsFactorize(int a){
-	long int fact;
+long long int mathsFactorize(int a){
+	long long int fact;
 	if(a <= 1){
 		fact = 1;
 	}

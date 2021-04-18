@@ -3,7 +3,7 @@
 *
 * Objetivo: Resolver Operaciones Matematicás
 *
-* Version: 2.2.5 del 17 de Abril de 2021
+* Version: 2.3.6 del 17 de Abril de 2021
 *
 * Autor: Juan Iribas
 *
@@ -21,8 +21,8 @@ int main(){
 	float subtraction; //Resultado de la resta
 	float division; //Resultado de la división
 	float multiplication; //Resultado de la multiplicación
-	int factorA; //Resultado del factorial de A
-	int factorB; //Resultado del factorial de B
+	long long int factorA; //Resultado del factorial de A
+	long long int factorB; //Resultado del factorial de B
 	int triggerNum1 = 0; //Para saber si ya fue ingresado el 1er operando
 	int triggerNum2 = 0; //Para saber si ya fue ingresado el 2do operando
 	int triggerMaths = 0; //Para saber si ya fueron realizados los calculos
@@ -72,15 +72,15 @@ int main(){
 					printf("d) El resultado de A*B es: %.2f.\n", multiplication);
 					if(num1>=0){
 						if(num2>=0){ //A y B son positivos
-							printf("e) El factorial de A es: %d y el factorial de B es: %d.\n\n", factorA, factorB);
+							printf("e) El factorial de A es: %I64d y el factorial de B es: %I64d.\n\n", factorA, factorB);
 						}
 						else{ //A es positivo y B negativo
-							printf("e) El factorial de A es: %d y B es un número negativo, no se puede calcular su factorial.\n\n", factorA);
+							printf("e) El factorial de A es: %I64d y B es un número negativo, no se puede calcular su factorial.\n\n", factorA);
 						}
 					}
 					else{
 						if(num2>=0){ //A es negativo y B positivo
-							printf("e) A es un número negativo, no se puede calcular su factorial y el factorial de B es: %d.\n\n", factorB);
+							printf("e) A es un número negativo, no se puede calcular su factorial y el factorial de B es: %I64d.\n\n", factorB);
 						}
 						else{ //A y B son negativos
 							printf("e) A y B son números negativos, no se pueden calcular sus factoriales.\n\n");
@@ -98,8 +98,6 @@ int main(){
 				system("pause");
 				break;
 			case 5: //Salir
-				system("cls||clear");
-				printf("Se terminó la ejecución del programa con éxito.\n");
 				continu=0;
 				break;
 			default: //Mensaje de error por si el usuario ingresa una opción incorrecta
@@ -109,5 +107,7 @@ int main(){
 				break;
 		}
 	}while(continu==1);
+	system("cls||clear");
+	printf("Se terminó la ejecución del programa con éxito.\n");
 	return 0;
 }

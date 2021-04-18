@@ -1,7 +1,7 @@
 #ifndef FUNCIONES_H_
 #define FUNCIONES_H_
 
-/** \brief Limpia la pantalla, muestra al usuario el menu y devuelve la opción elegida
+/** \brief Limpia la pantalla, muestra al usuario el menú y devuelve la opción elegida
  *
  * \param a Es el primer número
  * \param b Es el segundo número
@@ -10,7 +10,7 @@
  */
 int menu(float a, float b);
 
-/** \brief Limpia la pantalla, pide al usuario un número flotanta y lo devuelve
+/** \brief Limpia la pantalla, pide al usuario un número flotante y lo devuelve
  *
  * \param message Es el mensaje a mostrar
  * \param a Es el número flotante
@@ -41,7 +41,7 @@ float mathsSubtract(float a, float b);
  *
  * \param a Es el dividendo
  * \param b Es el divisor
- * \return Devuelve la division de los parametros ingresados
+ * \return Devuelve la división de los parametros ingresados
  *
  */
 float mathsDivide(float a, float b);
@@ -50,7 +50,7 @@ float mathsDivide(float a, float b);
  *
  * \param a Es el multiplicando
  * \param b Es el multiplicador
- * \return Devuelve la multiplicacion de los parametros ingresados
+ * \return Devuelve la multiplicación de los parametros ingresados
  *
  */
 float mathsMultiply(float a, float b);
@@ -62,6 +62,6 @@ float mathsMultiply(float a, float b);
  * \return Devuelve el factorial del número ingresado
  *
  */
-long int mathsFactorize(int a);
+long long int mathsFactorize(int a);
 
 #endif /* FUNCIONES_H_ */
